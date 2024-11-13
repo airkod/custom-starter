@@ -1,0 +1,36 @@
+{
+  "name": "aircms/shop",
+  "authors": [
+    {
+      "name": "Edward Komissarov",
+      "email": "execrot@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/aircms/core.git"
+    }
+  ],
+  "require": {
+    "ext-mongodb": "*",
+    "ext-mbstring": "*",
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-dom": "*",
+    "aircms/core": "dev-main"
+  },
+  "autoload": {
+    "files": [
+      "vendor/aircms/core/src/Air/View/Shorts/shorts.php"
+    ]
+  },
+  "scripts": {
+    "assets": [
+      "ln -sfn ../../vendor/aircms/core/assets www/assets/air"
+    ],
+    "gen": [
+      "php vendor/aircms/core/generator.php"
+    ]
+  }
+}

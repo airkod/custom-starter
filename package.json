@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "webpack-watch-files-plugin": "^1.2.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

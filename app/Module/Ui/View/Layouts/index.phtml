@@ -1,0 +1,26 @@
+<?php
+
+use Air\View\View;
+
+/** @var View $this */
+?>
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta name="theme-color" content="#2B2B35">
+  <?php
+  echo $this->getMeta();
+  echo $this->head(
+    viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+    favicon: 'images/favicon.ico',
+  );
+  echo $this->asset('build.css');
+  ?>
+</head>
+<body>
+<div role="main">
+  <?php echo $this->getContent(); ?>
+</div>
+<?php echo $this->asset('build.js'); ?>
+</body>
+</html>
